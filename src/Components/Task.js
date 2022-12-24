@@ -9,12 +9,24 @@ const Task = ({ task }) => {
   };
 
   return (
-    <div>
-      <h3>{task.id}</h3>
-      <h3>{task.title}</h3>
-      <h3>{task.sedule}</h3>
-      <h3>{task.disc}</h3>
-      <button onClick={handleDeleteEvent}>Delete Task</button>
+    <div className="flex items-center justify-around mt-6">
+      <div className="max-w-sm max-h-sm bg-slate-200 shadow rounded px-6 py-2">
+        <h3>
+          <li>{task.title}</li>
+        </h3>
+        <h3>
+          <li>{task.sedule}</li>
+        </h3>
+        <h3>
+          <li>{task.disc}</li>
+        </h3>
+        <button
+          className="px-4 py-1  bg-slate-300 shadow rounded"
+          onClick={handleDeleteEvent}
+        >
+          Delete Task
+        </button>
+      </div>
     </div>
   );
 };

@@ -1,9 +1,8 @@
-import "./App.css";
 import TaskManager from "./TaskManager";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <TaskManager />
     </div>
   );

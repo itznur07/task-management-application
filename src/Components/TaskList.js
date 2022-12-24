@@ -7,7 +7,9 @@ const TaskList = () => {
 
   return (
     <div>
-      <h3>Available Task</h3>
+      <h3 className="mt-4 font-bold text-2xl uppercase text-center">
+        Available Task
+      </h3>
       {tasks.map((task) => (
         <Task key={task.id} task={task} />
       ))}
